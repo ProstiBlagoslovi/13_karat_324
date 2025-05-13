@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="13karat" content="width=device-width, initial-scale=1.0">
+    <title>Тринадцать карат: Концерты</title>
+    <link rel="stylesheet" href="src\css\styles_Concerts.css">
+</head>
+<body>
+   <div class="background-container">
+      <div class="background-image"></div>
+
+   <div class="menu-icon" id="menuIcon">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+  </div>
+
+  <div class="overlay" id="overlay">
+   <div class="overlay-content">
+       <a href="Main.html">Главная</a>
+       <a href="Concerts.html">Концерты</a>
+       <a href="Music.html">Музыка</a>
+       <a href="Shop.html">Мерч</a>
+       <a href="About.html">Об исполнителе</a>
+   </div>
+  </div>
+
+  <script src="src/js/menu.js"></script>
+
+
+    <div class="header">
+        <div class="headerText">
+        <span class="textHead">Тринадцать<br>карат</span>
+        </div>
+        <div class="headerText2">
+            <span class="textHead2">Концерты</span>
+            </div>
+    </div>
+    <div class="white-stripe"></div>
+   </div>
+   
+      
+
+   <div class="content-after">
+
+    <div class="tickets">
+
+        <div class="ticket1">
+             <p class="ticketText1">20 мая <br>2025</p>
+             <div class="ticketPlace">
+                <p class="ticketText2">Минск</p>
+                <p class="ticketText3">Дворец спорта</p>
+             </div>
+             <button class="button">
+                <p class="butText">Билеты</p>
+             </button>
+        </div>
+
+        <div class="ticket1">
+            <p class="ticketText1">12 июня <br>2025</p>
+            <div class="ticketPlace">
+               <p class="ticketText2">Санкт-Петербург</p>
+               <p class="ticketText3">СК Юбилейный</p>
+            </div>
+            <button class="button">
+               <p class="butText">Билеты</p>
+            </button>
+       </div>
+
+       <div class="ticket1">
+        <p class="ticketText1">23 июня <br>2025</p>
+        <div class="ticketPlace">
+           <p class="ticketText2">Москва</p>
+           <p class="ticketText3">ЦСКА Арена</p>
+        </div>
+        <button class="button">
+           <p class="butText">Билеты</p>
+        </button>
+   </div>
+
+   <div class="ticket1">
+    <p class="ticketText1">4 июля <br>2025</p>
+    <div class="ticketPlace">
+       <p class="ticketText2">Якутск</p>
+       <p class="ticketText3">Yakutsk City Hall</p>
+    </div>
+    <button class="button">
+       <p class="butText">Билеты</p>
+    </button>
+</div>
+
+<div class="ticket1">
+    <p class="ticketText1">18 июля <br>2025</p>
+    <div class="ticketPlace">
+       <p class="ticketText2">Минск</p>
+       <p class="ticketText3">Дворец спорта</p>
+    </div>
+    <button class="button">
+       <p class="butText">Билеты</p>
+    </button>
+</div>
+
+<div class="ticket1">
+   <p class="ticketText1">24 июля <br>2025</p>
+   <div class="ticketPlace">
+      <p class="ticketText2">Санкт-Петербург</p>
+      <p class="ticketText3">СК Юбилейный</p>
+   </div>
+   <button class="button">
+      <p class="butText">Билеты</p>
+   </button>
+</div>
+
+<div class="ticket1">
+<p class="ticketText1">30 июля <br>2025</p>
+<div class="ticketPlace">
+  <p class="ticketText2">Москва</p>
+  <p class="ticketText3">ЦСКА Арена</p>
+</div>
+<button class="button">
+  <p class="butText">Билеты</p>
+</button>
+</div>
+
+<div class="ticket1">
+<p class="ticketText1">3 августа <br>2025</p>
+<div class="ticketPlace">
+<p class="ticketText2">Якутск</p>
+<p class="ticketText3">Yakutsk City Hall</p>
+</div>
+<button class="button">
+<p class="butText">Билеты</p>
+</button>
+</div>
+    </div>
+    
+
+    <div class="padding">
+
+    <a href="https://music.yandex.ru/artist/9473346" class="icon-link" target="_blank">
+        <img src="src\icons\ic_yandex.svg" alt="Иконка Яндекс" class="icon">
+        <span class="iconText">яндекс.музыка</span>
+    </a>
+
+    <a href="https://vk.com/1karat3" class="icon-link" target="_blank">
+        <img src="src\icons\ic_vk.svg" alt="Иконка Vk" class="icon">
+        <span class="iconText">вконтакте</span>
+    </a>
+
+    <a href="https://t.me/sasha1karat" class="icon-link" target="_blank">
+        <img src="src\icons\ic_telegram.svg" alt="Иконка Telegram" class="icon">
+        <span class="iconText">telegram</span>
+    </a>
+
+    <a href="https://www.youtube.com/channel/UC6Gwj565SsKQkTgwUr_6inA" class="icon-link" target="_blank">
+        <img src="src\icons\ic_youtube.svg" alt="Иконка YouTube" class="icon">
+        <span class="iconText">youtube</span>
+    </a>
+
+</div>
+    </div>
+
+    <div id="ticketModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="product-title" id="modalTicketTitle"></div>
+          <form id="ticketForm">
+              <input type="hidden" id="concertId">
+              <div class="form-group">
+                  <label for="name">Имя:</label>
+                  <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                  <label for="phone">Телефон:</label>
+                  <input type="tel" id="phone" name="phone" required>
+              </div>
+              <div class="form-group">
+                  <label>Количество билетов:</label>
+                  <div class="ticket-counter">
+                      <button type="button" class="counter-btn" id="decrement">-</button>
+                      <input type="number" id="tickets" name="tickets" value="1" min="1" max="10" readonly>
+                      <button type="button" class="counter-btn" id="increment">+</button>
+                  </div>
+              </div>
+              <button type="submit" class="submit-btn">Подтвердить заказ</button>
+          </form>
+      </div>
+  </div>
+  <script src="src/js/tickets.js"></script>
+
+    
+</body>
+</html>

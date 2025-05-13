@@ -1,0 +1,292 @@
+/**{margin: 0px;
+padding: 0;
+box-sizing: border-box;}*/
+
+@font-face{
+    font-family: 'Martian Mono Bold';
+    src:url(../fonts/MartianMono-Bold.ttf)
+}
+
+@font-face{
+    font-family: 'MartelSans-Regular';
+    src:url(../fonts/MartelSans-Regular.ttf)
+}
+
+@font-face{
+    font-family: 'MartelSans-SemiBold';
+    src:url(../fonts/MartelSans-SemiBold.ttf)
+}
+
+
+body {
+    margin: 0;
+    background-repeat: no-repeat;
+    margin: 0%;
+    padding: 0%;
+    color: #000;
+}
+
+
+.menu-icon {
+    cursor: pointer;
+    position: fixed;
+    top: 40px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: white;
+    transition: all 0.3s;
+}
+
+/* Стили для открытого состояния иконки */
+.menu-icon.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.menu-icon.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.menu-icon.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+.overlay {
+    position: fixed;
+    top: 20px;
+    right: -420px; /* Скрываем за правым краем */
+    width: 420px;
+    height: 776px;
+    background: rgba(42, 49, 48, 0.50);
+    z-index: 999;
+    border-radius: 15px 0 0 15px;
+    transition: right 0.4s ease;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+.overlay.active {
+    right: 0; /* Показываем меню */
+}
+
+.overlay-content {
+    position: absolute;
+    text-align: left;
+    padding: 30px;
+    height: calc(100% - 40px);
+}
+
+.overlay-content a {
+    display: block;
+    color: white;
+    font-family: 'Martian Mono Bold', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s;
+    border-radius: 5px;
+}
+
+.overlay-content a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(10px);
+}
+
+
+
+
+
+
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/karat.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.white-stripe {
+    position: absolute;
+    margin-top: 1800px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+
+.content-after {
+    padding: 50px;
+    background-color: black;
+    height: auto;
+   }
+
+
+
+
+
+.headerText {
+left: 5%;
+top: 15%;
+text-align: left;
+height: inherit;
+position: absolute;
+}
+
+.textHead{
+    /* Тринадцать карат */
+color: white;
+font-family: 'Martian Mono Bold', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 90px;
+line-height: 115px;
+text-transform: uppercase;
+}
+
+
+.headerText2 {
+margin-left: 211px;
+bottom: 2%;
+text-align: left;
+height: inherit;
+position: absolute;
+}
+
+.textHead2{
+    /* Об Исполнителе */
+color: white;
+font-family: 'Martian Mono Bold', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 55px;
+line-height: 77px;
+text-transform: uppercase;
+}
+
+
+.info{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+    padding-right: 120px;
+    }
+
+    .imgInfo{
+        margin-top: 90px;
+        position: relative;
+    }
+
+    .block1{
+        position: relative;
+        width: auto;
+        max-width: 1728px;
+        height: auto;
+        left: auto;
+        top: auto;
+        margin-top: 50px;  
+        margin-bottom: 90px;
+    }
+
+    .text1 {
+        font-family: 'Martian Mono Bold', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 44px;
+        text-transform: none;
+        text-align: justify;
+        color: #FFFFFF;
+        
+        word-wrap: break-word;
+        white-space: normal;
+    }
+
+
+    .media-block {
+        display: flex;
+        align-items: center;
+        gap: 70px;
+        margin: 50px 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .media-content {
+        flex: 1;
+        min-width: 300px;
+    }
+    
+    .media-image {
+        max-width: 500px;
+        max-height: 500px;
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+    }
+    
+    /* Модификаторы порядка */
+    .media-block--image-first .media-image { order: 1; }
+    .media-block--image-first .media-content { order: 2; }
+    
+    .media-block--text-first .media-content { order: 1; }
+    .media-block--text-first .media-image { order: 2; }
+
+
+
+.padding{
+    background-color: #000;
+width: 100%;
+box-sizing: border-box;
+margin-top: 200px;
+margin-bottom: 100px;
+padding-left: 100px;
+padding-right: 100px;
+justify-content: space-around; 
+display: flex;
+}
+
+
+.icon-link{
+display: flex;
+align-items: center;
+text-decoration: none;
+transition: color 0.3s;
+color: #fff; 
+}
+
+.icon {
+margin-right: 13px;
+width: 35px;
+height: 35px;
+}
+
+.iconText{
+font-family: 'Martian Mono Bold', sans-serif;
+font-style: normal;
+font-size: 20px;
+font-weight: 800;
+margin: 0%;
+text-transform: uppercase;
+}
+
